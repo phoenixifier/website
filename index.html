@@ -5,27 +5,55 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-    <div class="background">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
-        <div class="myself">
-            <h1>Call me <span>Cybeast Falzar</span></h1>
-            <h1>This is my official website where I share my
-            <br>story, experience and etc.
-            </h1>
-            <a href="#">My Blog</a>
+    <header>
+        <a href="#" class="logo"><img src="images/logo 1.png"></a>
+        <div class="rightSide">
+            <div class="btns dayNight">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+            <div class="btns menuToggle">
+                <ion-icon name="menu-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
         </div>
-    </div>
+    </header>
+    <section class="main">
+        <p class="copyright">© Cybeast Falzar - 2023</p>
+        <ul class="social">
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="navigate-outline"></ion-icon></a></li>
+        </ul>
+
+    </section>
+
+    <ul class="navigation">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">MY BLOG</a></li>
+        <li><a href="#">CONTACT ME</a></li>
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let dayNight = document.querySelector('.dayNight');
+        let menuToggle = document.querySelector('.menuToggle');
+        let body = document.querySelector('body');
+        let navigation = document.querySelector('.navigation');
+
+        dayNight.onclick = function(){
+            body.classList.toggle('dark');
+            dayNight.classList.toggle('active');
+        }
+
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
