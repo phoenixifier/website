@@ -221,4 +221,23 @@ span{
         right: 20px;
         bottom: 20px;
     }
+    .core{
+        top: 350px;
+        left: 30%;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    .picture{
+        top: -180%;
+        left: 0%;
+        height: 225px;
+        width: 225px;
+    }
 }
