@@ -80,6 +80,66 @@ main{
     align-items: center;
 }
 
+.core{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+}
+
+h1{
+    font-size: 2.25em;
+    margin: 10px 0;
+}
+
+h2{
+    font-weight: 300;
+    margin: 10px 0 40px 0;
+}
+
+.blog{
+    text-decoration: none;
+    padding: 10px 35px;
+    background: rgba(253, 86, 2, 0.927);
+    margin: 20px 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.blog:hover{
+    background: rgba(244, 129, 72, 0.927);
+}
+
+.dark .blog{
+    background: rgb(21, 153, 248);
+}
+
+.dark .blog:hover{
+    background: rgb(63, 168, 243);
+}
+
+span{
+    color: rgba(253, 86, 2, 0.927);
+}
+
+.dark span{
+    color: rgb(21, 153, 248);
+}
+
+.picture{
+    position: absolute;
+    top: -10%;
+    left: 140%;
+    height: 275px;
+    width: 275px;
+}
+
+.dark .picture{
+    filter: invert(1);
+}
+
 .navigation{
     position: absolute;
     top: 0;
